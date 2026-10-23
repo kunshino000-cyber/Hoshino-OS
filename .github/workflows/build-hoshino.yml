@@ -1,0 +1,17 @@
+
+name: Build Hoshino OS
+
+on:
+  workflow_dispatch:
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      - name: Check starter kit
+        run: |
+          ls -la
+          test -f Hoshino_OS_Starter_Kit.zip
+          
