@@ -1,0 +1,2 @@
+# Hoshino-OS
+For linux
